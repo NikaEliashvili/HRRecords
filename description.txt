@@ -1,0 +1,4 @@
+API --- source.medsoft.ge:8002/index.html
+1. EHRRecords/ehr/ListGet?History -- API fetch data with history index
+2. use only histology.
+3. folder: modules  => histology => 4 file (card, modal, css, api) 

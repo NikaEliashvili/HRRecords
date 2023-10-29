@@ -1,0 +1,165 @@
+p {
+    margin: 0.5rem 0;
+}
+
+.card {
+    margin: 2rem auto;
+    width: 90%;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid rgb(85, 197, 219);
+    border-radius: 0.2rem;
+    box-shadow: 0px -1px 7px 2px rgba(9, 30, 44, 0.03), 0px 1px 7px 2px rgba(9, 30, 44, 0.03), 2px 1px 7px 2px rgba(9, 30, 44, 0.03), -2px 1px 7px 2px rgba(9, 30, 44, 0.03);
+}
+
+.cardHeader {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(42, 40, 40);
+}
+
+.paraghraph {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgb(39, 36, 36);
+    margin: 0.8rem 0;
+}
+
+.bold {
+    color: rgb(34, 34, 38);
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.department {
+    margin-left: auto;
+}
+
+
+
+
+/*--------  HistologySet css classes --------*/
+
+.modal {
+    top: 1.25rem;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.inputField {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.fieldContainer {
+    width: 30%;
+    flex-grow: 1;
+    margin-top: auto;
+}
+
+.customLabel {
+    font-size: 0.7rem !important;
+    margin-right: auto;
+}
+
+.checkboxRed {
+    color: red;
+    font-size: 0.75rem !important;
+}
+
+.checkbox {
+    font-size: 0.75rem !important;
+}
+
+.textArea {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+
+.spin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+.loadingSpin {
+
+    z-index: 3;
+}
+
+
+.spin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.spin::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    margin: auto;
+    width: 10rem;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 1rem;
+    z-index: 2;
+    animation: spinPopUp 0.125s ease-out 0s 1 alternate;
+}
+
+
+
+
+
+
+
+@keyframes spinPopUp {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}

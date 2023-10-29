@@ -1,0 +1,80 @@
+.crud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(85, 197, 219);
+    border-radius: 0.2rem;
+
+}
+
+.date {
+    font-size: 0.75rem;
+    margin: 0.5rem 0;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.button {
+    background: none;
+    padding: 0rem;
+    outline: none;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.button:hover .iconPlus {
+    transition-delay: 0.1s;
+    transform: scale(80%);
+    filter: brightness(0.6);
+}
+
+.button:hover .iconEdit,
+.button:hover .iconDelete {
+    transition-delay: 0.1s;
+    transform: scale(90%);
+    filter: brightness(90%);
+}
+
+.iconPlus,
+.iconEdit,
+.iconDelete {
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+.iconPlus {
+    color: rgb(10, 159, 57);
+}
+
+.iconEdit {
+    color: orange;
+}
+
+.iconDelete {
+    color: red;
+}
+
+.loading {
+    margin-left: 1rem;
+}
+
+.modalDeleteBtn {
+    background-color: red;
+}
+
+.modalDeleteBtn span {
+    color: white;
+}
