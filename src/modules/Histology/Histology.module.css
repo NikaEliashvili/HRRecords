@@ -22,22 +22,62 @@ p {
 .paraghraph {
     display: flex;
     align-items: center;
+    justify-content: start;
     gap: 0.5rem;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    color: rgb(39, 36, 36);
+    color: rgb(37, 35, 35);
     margin: 0.8rem 0;
+}
+
+.paraghraph>div {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    min-width: fit-content;
 }
 
 .bold {
     color: rgb(34, 34, 38);
     margin-right: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.825rem;
     font-weight: 600;
+    min-width: fit-content;
 }
 
 .department {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-width: fit-content;
+    width: 100%;
+    text-align: right;
+}
+
+.department .bold {
+    margin-left: auto;
+}
+
+.paraghraph .skeletonAnim {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 15px;
+    margin-top: 0.5rem;
+
+}
+
+.department .skeletonAnim {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    margin-top: 0.5rem;
 }
 
 
@@ -144,6 +184,8 @@ p {
     z-index: 2;
     animation: spinPopUp 0.125s ease-out 0s 1 alternate;
 }
+
+
 
 
 

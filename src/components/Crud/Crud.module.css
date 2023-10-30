@@ -78,3 +78,13 @@
 .modalDeleteBtn span {
     color: white;
 }
+
+.crudSkeletonAnim {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 50px;
+    margin: 0;
+    width: 100%;
+
+}

@@ -18,8 +18,8 @@ function HistologySet({ refID, open, handleCancel }) {
   const [histologyData, setHistologyData] = useState(null);
   const [form] = Form.useForm();
   const [confirmLoading, setConfirmLoading] = useState(false);
-  console.log(refID);
-
+  console.log("RecordID: ", refID);
+  // console.log(histologyData);
   useEffect(() => {
     if (refID !== null) {
       fetchHistologyData(refID).then((res) => {
@@ -50,10 +50,10 @@ function HistologySet({ refID, open, handleCancel }) {
   const onFinish = (values) => {
     if (refID === null) {
       // async funciton to add new form
-      console.log(values);
+      console.log("Added Object: ", values);
     } else {
       // async function to edit an existing form
-      console.log(values);
+      console.log("Edited Object with RecordID: " + refID + " ", values);
     }
   };
 
